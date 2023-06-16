@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+
+
+/*font-family: 'DM Sans', sans-serif;
+font-family: 'DM Sans', sans-serif;
+font-family: 'DM Sans', sans-serif;*/
+
+:root {
+--bg-color-desktop-up: white;
+--bg-color-desktop-down: rgba(234, 234, 234, 1);
+--bg-color-mobile-down: rgba(217, 217, 217, 1);
+--text-color-1: rgba(22, 22, 22, 1);
+--text-color-2: rgba(55, 82, 226, 1);
+--text-color-3: rgba(156, 156, 156, 1);
+--cta-color: rgba(22, 22, 22, 1);
+--bg-color-middle: rgba(22, 22, 22, 1);
+--font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    color: var(--text-color-3);
+}
+
+
+
+/*Desktop*/
+
+@media screen and (min-width: 1200px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    h1 {
+        color: var(--text-color-1);
+        font-size: xxx-large;
+    }
+
+    .button-top {
+        text-decoration: none;
+        background-color: var(--cta-color);
+        color: white;
+        padding: 1em;
+        border-radius: 2em;
+    }
+
+    .paragraphe1 {
+        color: var(--text-color-1);
+        font-size: larger;
+        margin-bottom: 2em;
+    }
+
+    .button-get-started {
+        text-decoration: none;
+        color: white;
+        background-color: var(--cta-color);
+        border-radius: 2em;
+        padding: 1em;
+    }
+
+    /*.image-phone {
+        width: 100%;
+        height: 100%;
+    }*/
+
+    .phone {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .section1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-phone {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .text-et-cta {
+        position: absolute;
+        z-index: 2;
+        margin-top: 46em;
+        margin-inline-end: 30em;
+    }
+
+    .brands {
+        display: flex;
+        justify-content: space-around;
+        background-color: var(--bg-color-middle);
+    }
+
+    .brand {
+        width: 10em;
+        height: 10em;
+        color: white;
+    }
+
+    .section3 {
+        display: flex;
+        justify-content: center;
+        background-color: var(--bg-color-desktop-down);
+    }
+
+    .image-mobile {
+        position: relative;
+        z-index: 1;
+        margin-inline-end: 60em;
+        margin-top: 5em;
+    }
+
+    .title-text-cta {
+        position: absolute;
+        z-index: 2;
+        margin-top: 23em;
+        margin-left: 40em;
+    }
+
+    .mobile-png {
+        width: 50em;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    h2 {
+        font-size: xx-large;
+    }
+
+    .paragraphe2 {
+        color: var(--text-color-1);
+        font-size: larger;
+        margin-bottom: 2em;
+    }
+
+    .button-discord {
+        text-decoration: none;
+        color: white;
+        background-color: var(--cta-color);
+        border-radius: 2em;
+        padding: 1em;
+    }
+
+    .footer-elements {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cgv {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .p-cgv {
+        padding-inline: 3em;
+    }
+
+    .skilled-footer {
+        margin-bottom: -1em;
+    }
+
+    footer {
+        margin-top: 2em;
+    }
+
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 412px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .button-top {
+        text-decoration: none;
+        background-color: var(--cta-color);
+        color: white;
+        padding: 1em;
+        border-radius: 2em;
+    }
+
+    .image-phone {
+        margin-top: 2em;
+        margin-bottom: 5em;
+    }
+
+    .phone {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        margin-top: 2em;
+    }
+
+    .section1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-et-cta {
+        text-align: center;
+    }
+
+    .button-get-started {
+        text-decoration: none;
+        color: white;
+        background-color: var(--cta-color);
+        border-radius: 2em;
+        padding: 1em;
+    }
+
+    h1 {
+        color: var(--text-color-1);
+        font-size: xx-large;
+    }
+
+    h2 {
+        font-size: x-large;
+        color: var(--text-color-1);
+    }
+
+    .paragraphe1 {
+        color: var(--text-color-1);
+        font-size: medium;
+        margin-bottom: 2em;
+    }
+
+    .brands {
+        display: flex;
+        justify-content: space-around;
+        background-color: var(--bg-color-middle);
+        flex-wrap: wrap;
+        /*margin-right: 6em;*/
+    }
+
+    .brand {
+        width: 5em;
+        height: 5em;
+        margin-inline: 1em;
+    }
+
+    .section3 {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: var(--bg-color-mobile-down);
+    }
+
+    .title-text-cta {
+        text-align: center;
+        margin-bottom: 6em;
+        margin-top: 5em;
+    }
+
+    .paragraphe2 {
+        color: var(--text-color-1);
+        font-size: medium;
+        margin-bottom: 3em;
+    }
+
+    .button-discord {
+        text-decoration: none;
+        color: white;
+        background-color: var(--cta-color);
+        border-radius: 2em;
+        padding: 1em;
+    }
+
+    .mobile-png {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    footer {
+        margin-top: 2em;
+    }
+
+    .footer-elements {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cgv {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .skilled-footer {
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+    .copyright {
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    
+
+}
+
